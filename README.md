@@ -7,7 +7,7 @@ The Study Spots Finder is a React application designed to help users find and ma
 - **Landing Page**: Welcome page with information about the app.
 - **User Authentication**: Login and Sign-up functionality.
 - **Dashboard**: A protected route where users can manage their study spots.
-- **Study Spots Listing**: View a list of available study spots.
+- **Study Spots Listing**: View a list of available study spots and redirect to Google Map.
 - **Protected Routes**: Ensure only authenticated users can access certain pages.
 
 ---
