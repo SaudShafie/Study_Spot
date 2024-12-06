@@ -8,7 +8,7 @@ const StudySpotCard = ({ spot }) => {
   const navigate = useNavigate();
   const theme = useTheme();
 
-  // Mock reviews data with emojis
+ 
   const mockReviews = [
     "Great place to study! 📚✨",
     "Loved the ambiance here. ☕🌿",
@@ -28,7 +28,7 @@ const StudySpotCard = ({ spot }) => {
   ];
 
   useEffect(() => {
-    // Randomly select a few reviews for each card
+    
     const shuffledReviews = mockReviews.sort(() => 0.5 - Math.random());
     setReviews(shuffledReviews.slice(0, 3));
   }, [spot.id]);
@@ -39,7 +39,8 @@ const StudySpotCard = ({ spot }) => {
     }
   };
 
-  const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.name)},${encodeURIComponent(spot.address)}`;
+  const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.latitude)},${encodeURIComponent(spot.longitude)}`;
+
 
 
 
