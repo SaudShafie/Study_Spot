@@ -2,6 +2,7 @@
 
 ## Description
 The Study Spots Finder is a React application designed to help users find and manage study spots. The app includes features such as user authentication, a dashboard to manage study spots, and a public listing of available spots. It is built with React and uses Vite as the build tool.
+- **Pages Link: https://saudshafie.github.io/Study_Spot/
 
 ## Features
 - **Landing Page**: Welcome page with information about the app.
