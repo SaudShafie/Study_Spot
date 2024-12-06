@@ -1,0 +1,67 @@
+/* StudySpotsList.css */
+
+/* Wrapper for the page */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    position: relative; /* Ensure relative positioning for the buttons */
+  }
+  
+  /* Buttons container */
+  .buttons-container {
+    position: fixed;
+    top: 20px;
+    right: 40px; /* Place buttons 20px from the top and right edges */
+    display: flex;
+    gap: 20px; /* Add gap between buttons */
+    z-index: 3; /* Ensure buttons are on top of other elements */
+  }
+  
+  /* Styling for the search box */
+  .search-box {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .search-box .MuiTextField-root {
+    width: 100%;
+  }
+  
+  .search-box .MuiButton-root {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  /* Grid container for study spots */
+  .study-spots-grid {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Customize buttons */
+  .study-spot-button {
+    width: 150px;
+  }
+  
+  .logout-button {
+    color: #FF0000; /* Red text color */
+    border-color: #FF0000; /* Red border color */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-weight: bold; /* Bold the logout button */
+    padding: 10px 20px; /* Add padding to make it bigger */
+    border-radius: 4px; /* Optional: Add slight rounding of corners */
+}
+
+.logout-button:hover {
+    color: #FF0000; /* Change text color on hover */
+    border-color: #FF0000; /* Change border color on hover */
+    background-color: rgba(255, 0, 0, 0.1); /* Optional: Add a slight background for hover effect */
+    cursor: pointer; /* Change cursor to pointer for better user experience */
+}

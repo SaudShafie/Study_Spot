@@ -1,0 +1,103 @@
+/* Dashboard.css */
+
+.dashboard-wrapper {
+    min-height: 100vh;
+    background-image: url('../assets/background.jpg'); /* Replace with the appropriate path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 60px 80px; /* Increase padding to make layout more balanced */
+}
+
+.dashboard-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darken layer to improve text readability */
+    z-index: 1;
+}
+
+.dashboard-button-container {
+    position: fixed;
+    top: 20px;
+    right: 40px; /* Adjusted so buttons are not too close to the right edge */
+    display: flex;
+    gap: 20px;
+    z-index: 3; /* Ensure the buttons are above other elements */
+}
+
+.dashboard-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px; /* Increase padding to spread content */
+    text-align: left; /* Align text to the left */
+}
+
+.dashboard-header {
+    color: white;
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 2.5rem; /* Increase font size for emphasis */
+    font-weight: 600; /* Make header text bold */
+}
+
+.dashboard-button {
+    color: #1e90ff;
+    border-color: #1e90ff;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.dashboard-button:hover {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.dashboard-section-title {
+    color: white;
+    margin-bottom: 20px;
+    text-align: left; /* Align section titles to the left */
+    font-size: 1.8rem; /* Larger font size for section titles */
+    font-weight: 500;
+}
+
+.dashboard-divider {
+    margin-top: 20px;
+    margin-bottom: 40px; /* Increase margin between divider and content below */
+    border-color: #1e90ff;
+    width: 50%;
+    margin-left: 0;
+}
+
+.list-section {
+    margin-bottom: 60px; /* Increase spacing between sections */
+}
+
+.dashboard-list-item {
+    color: white;
+    padding: 10px 0; /* Add padding to spread items out */
+    margin-bottom: 20px; /* Add spacing between each list item */
+}
+
+/* Logout Button Styles */
+.logout-button {
+    color: #FF0000; /* Red text color */
+    border-color: #FF0000; /* Red border color */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-weight: bold; /* Bold the logout button */
+    padding: 10px 20px; /* Add padding to make it bigger */
+    border-radius: 4px; /* Optional: Add slight rounding of corners */
+}
+
+.logout-button:hover {
+    color: #FF0000; /* Change text color on hover */
+    border-color: #FF0000; /* Change border color on hover */
+    background-color: rgba(255, 0, 0, 0.1); /* Optional: Add a slight background for hover effect */
+    cursor: pointer; /* Change cursor to pointer for better user experience */
+}
