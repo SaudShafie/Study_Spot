@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import LandingPage from "./pages/LandingPage";
 import Dashboard from "./pages/Dashboard";
-
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import StudySpotsList from "./pages/StudySpotsList";
@@ -11,8 +10,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 const App = () => {
   return (
-    <Router>
-      
+    <Router basename="/Study_Spot"> {/* Set the deployment subpath here */}
       <Routes>
         {/* Public Routes */}
         <Route path="/" element={<LandingPage />} />
@@ -36,7 +34,6 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-        
       </Routes>
     </Router>
   );
